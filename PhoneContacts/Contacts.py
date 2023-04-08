@@ -18,7 +18,7 @@ class PhoneDictionary:
         results = []
         for key, value in self.dictionary.items():
           if value == " ".join(
-              list(map(lambda word: word.capitalize(), "olha aloshina".split()))):
+              list(map(lambda word: word.capitalize(), input("Type 'Name Surname' to find the contact: ").split()))):
               results.append((key, value))
         print(*results if len(results) > 0 else "Nothing Found", sep="\n")
 
